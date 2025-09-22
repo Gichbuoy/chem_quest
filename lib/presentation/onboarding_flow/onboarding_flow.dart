@@ -21,7 +21,7 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
 
   final List<Map<String, dynamic>> _onboardingData = [
     {
-      "title": "Welcome to CATmistry!",
+      "title": "Welcome to Chem-Quest!",
       "description":
           "Meet your chemistry companion! Our cat mascot will guide you through fun experiments and help you master chemistry concepts with purr-fect precision.",
       "imageUrl":

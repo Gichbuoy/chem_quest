@@ -377,7 +377,7 @@ class _PHIndicatorMiniGameState extends State<PHIndicatorMiniGame>
     final accuracy =
         _totalAttempts > 0 ? (_correctAnswers / _totalAttempts) * 100 : 0.0;
     final message =
-        'I just scored $_score points with ${accuracy.toStringAsFixed(1)}% accuracy in the CATmistry pH Indicator Mini-Game! 🧪🐱 #CATmistry #Chemistry #Learning';
+        'I just scored $_score points with ${accuracy.toStringAsFixed(1)}% accuracy in the Chem-Quest pH Indicator Mini-Game! 🧪🐱 #ChemQuest #Chemistry #Learning';
 
     // In a real app, you would use a sharing plugin here
     ScaffoldMessenger.of(context).showSnackBar(

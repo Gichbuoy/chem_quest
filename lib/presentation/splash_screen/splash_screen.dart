@@ -145,11 +145,11 @@ class _SplashScreenState extends State<SplashScreen>
 
   Future<void> _performInitializationTasks() async {
     final tasks = [
-      {"name": "Loading user progress...", "duration": 400},
-      {"name": "Preparing chemistry problems...", "duration": 600},
-      {"name": "Fetching daily challenges...", "duration": 500},
-      {"name": "Caching offline content...", "duration": 700},
-      {"name": "Initializing game engine...", "duration": 500},
+      {"name": "Loading user progress...", "duration": 900},
+      {"name": "Preparing chemistry problems...", "duration": 2000},
+      {"name": "Fetching daily challenges...", "duration": 1600},
+      {"name": "Caching offline content...", "duration": 1900},
+      {"name": "Initializing game engine...", "duration": 5000},
     ];
 
     for (int i = 0; i < tasks.length; i++) {
@@ -377,7 +377,7 @@ class _SplashScreenState extends State<SplashScreen>
 
         // App name
         Text(
-          "CATmistry",
+          "Chem-Quest",
           style: GoogleFonts.poppins(
             fontSize: 24.sp,
             fontWeight: FontWeight.bold,
