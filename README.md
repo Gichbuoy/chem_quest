@@ -87,6 +87,24 @@ flutter_app/
 ```
 
 
+![Splash Screen](/assets/images/readme-img/Screenshot%20(412).png)
+
+
+![Dashboard](/assets/images/readme-img/Screenshot%20(413).png)
+
+![Dashboard Cont.](/assets/images/readme-img/Screenshot%20(414).png)
+
+![Games](/assets/images/readme-img/Screenshot%20(415).png)
+
+![PH Indicator Game](/assets/images/readme-img/Screenshot%20(416).png)
+![PH Game Completed](/assets/images/readme-img/Screenshot%20(417).png)
+![Balance Equations Game](/assets/images/readme-img/Screenshot%20(419).png)
+
+
+![Progress Tracking](/assets/images/readme-img/Screenshot%20(423).png)
+
+
+
 
 ## 📦 Deployment
 
