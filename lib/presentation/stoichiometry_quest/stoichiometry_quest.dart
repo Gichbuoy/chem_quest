@@ -782,4 +782,77 @@ class _StoichiometryQuestState extends State<StoichiometryQuest>
       ),
     );
   }
+
+
+  
+
+  Widget _buildBottomNavigationBar() {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppTheme.lightTheme.colorScheme.surface,
+        boxShadow: [
+          BoxShadow(
+            color: AppTheme.shadowLight,
+            blurRadius: 8,
+            offset: const Offset(0, -2),
+          ),
+        ],
+      ),
+      child: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 2.h),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              _buildNavItem('Dashboard', 'dashboard', false, '/main-dashboard'),
+              _buildNavItem(
+                  'pH Game', 'science', false, '/p-h-indicator-mini-game'),
+              _buildNavItem(
+                  'Stoichiometry', 'calculate', false, '/stoichiometry-quest'),
+              _buildNavItem(
+                  'Progress', 'trending_up', true, '/progress-tracking'),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildNavItem(
+      String label, String iconName, bool isActive, String route) {
+    return GestureDetector(
+      onTap: isActive ? null : () => Navigator.pushNamed(context, route),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            padding: EdgeInsets.all(2.w),
+            decoration: BoxDecoration(
+              color: isActive
+                  ? AppTheme.lightTheme.primaryColor.withValues(alpha: 0.1)
+                  : Colors.transparent,
+              borderRadius: BorderRadius.circular(AppTheme.smallRadius),
+            ),
+            child: CustomIconWidget(
+              iconName: iconName,
+              color: isActive
+                  ? AppTheme.lightTheme.primaryColor
+                  : AppTheme.textSecondaryLight,
+              size: 6.w,
+            ),
+          ),
+          SizedBox(height: 0.5.h),
+          Text(
+            label,
+            style: AppTheme.lightTheme.textTheme.labelSmall?.copyWith(
+              fontWeight: isActive ? FontWeight.w600 : FontWeight.w400,
+              color: isActive
+                  ? AppTheme.lightTheme.primaryColor
+                  : AppTheme.textSecondaryLight,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }

@@ -1,8 +1,18 @@
-# chem_quest
+# Chem_Quest
 
-# Flutter
 
-A modern Flutter-based mobile application utilizing the latest mobile development technologies and tools for building responsive cross-platform applications.
+ChemQuest is a mobile-first educational chemistry game designed to make upper-secondary (ages 14–18) chemistry fun, interactive, and engaging.
+Built with Flutter, the app combines bite-sized lessons, mini-games, and progress tracking to reinforce critical chemistry concepts through play.
+
+
+## 🎯 Educational Goals
+ChemQuest addresses a key gap in chemistry education:
+
+- Active Learning – Students learn by doing, not just reading.
+
+- Curriculum Alignment – All formulas, pH data, and stoichiometric calculations follow high-school chemistry standards.
+
+- Engagement – Bright visuals, cat mascots, and a rewarding game loop reduce learning anxiety.
 
 ## 📋 Prerequisites
 
@@ -11,7 +21,36 @@ A modern Flutter-based mobile application utilizing the latest mobile developmen
 - Android Studio / VS Code with Flutter extensions
 - Android SDK / Xcode (for iOS development)
 
-## 🛠️ Installation
+## 🛠️ Tech Stack
+
+- Framework: Flutter
+ (Dart) for iOS/Android Progressive Web App (PWA)
+
+- State Management: Provider / Riverpod
+
+- Backend: Superbase, REST API for leaderboards and adaptive question banks.
+
+- Data Storage: Local JSON for question banks and answer keys.
+
+
+## 🚀 Getting Started
+Prerequisites
+
+- Flutter SDK
+ (v3.0+)
+
+- Dart 2.18+
+
+- Android Studio / VS Code with Flutter extensions
+
+### 🛠️ Installation
+
+```
+git clone https://github.com/gichbuoy/chemquest.git
+cd chemquest
+flutter pub get
+flutter run
+```
 
 1. Install dependencies:
 ```bash
@@ -34,6 +73,11 @@ flutter_app/
 │   │   └── utils/      # Utility classes
 │   ├── presentation/   # UI screens and widgets
 │   │   └── splash_screen/ # Splash screen implementation
+│   │   ├─ onboarding_flow.dart
+│   │   ├─ main_dashboard.dart
+│   │   ├─ ph_game.dart
+│   │   ├─ stoichiometry_quest.dart
+│   │   └─ progress_tracking.dart
 │   ├── routes/         # Application routing
 │   ├── theme/          # Theme configuration
 │   ├── widgets/        # Reusable UI components
@@ -43,57 +87,8 @@ flutter_app/
 └── README.md           # Project documentation
 ```
 
-## 🧩 Adding Routes
 
-To add new routes to the application, update the `lib/routes/app_routes.dart` file:
 
-```dart
-import 'package:flutter/material.dart';
-import 'package:package_name/presentation/home_screen/home_screen.dart';
-
-class AppRoutes {
-  static const String initial = '/';
-  static const String home = '/home';
-
-  static Map<String, WidgetBuilder> routes = {
-    initial: (context) => const SplashScreen(),
-    home: (context) => const HomeScreen(),
-    // Add more routes as needed
-  }
-}
-```
-
-## 🎨 Theming
-
-This project includes a comprehensive theming system with both light and dark themes:
-
-```dart
-// Access the current theme
-ThemeData theme = Theme.of(context);
-
-// Use theme colors
-Color primaryColor = theme.colorScheme.primary;
-```
-
-The theme configuration includes:
-- Color schemes for light and dark modes
-- Typography styles
-- Button themes
-- Input decoration themes
-- Card and dialog themes
-
-## 📱 Responsive Design
-
-The app is built with responsive design using the Sizer package:
-
-```dart
-// Example of responsive sizing
-Container(
-  width: 50.w, // 50% of screen width
-  height: 20.h, // 20% of screen height
-  child: Text('Responsive Container'),
-)
-```
 ## 📦 Deployment
 
 Build the application for production:
@@ -105,6 +100,13 @@ flutter build apk --release
 # For iOS
 flutter build ios --release
 ```
+
+
+## 🌟 Tagline
+Play  Learn → Practice → Master Chemistry with ChemQuest! 
+For high engagement and knowledge retention.
+
+
 
 ## 🙏 Acknowledgments
 - Powered by [Flutter](https://flutter.dev) & [Dart](https://dart.dev)
