@@ -86,21 +86,29 @@ flutter_app/
 └── README.md           # Project documentation
 ```
 
-
+Splash Screen
 ![Splash Screen](/assets/images/readme-img/Screenshot%20(412).png)
 
-
+Dashboard
 ![Dashboard](/assets/images/readme-img/Screenshot%20(413).png)
 
+Dashboard
 ![Dashboard Cont.](/assets/images/readme-img/Screenshot%20(414).png)
 
+Games Tab
 ![Games](/assets/images/readme-img/Screenshot%20(415).png)
 
+PH Indicator Game
 ![PH Indicator Game](/assets/images/readme-img/Screenshot%20(416).png)
+
+PH Indicator Game Completed
 ![PH Game Completed](/assets/images/readme-img/Screenshot%20(417).png)
+
+Balance Equations Gam
 ![Balance Equations Game](/assets/images/readme-img/Screenshot%20(419).png)
 
 
+Progress Tracking
 ![Progress Tracking](/assets/images/readme-img/Screenshot%20(423).png)
 
 
