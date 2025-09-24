@@ -103,8 +103,8 @@ flutter build ios --release
 
 
 ## 🌟 Tagline
-Play  Learn → Practice → Master Chemistry with ChemQuest! 
-For high engagement and knowledge retention.
+Play → Learn → Practice → Master Chemistry with ChemQuest! 
+- For high engagement and knowledge retention.
 
 
 
